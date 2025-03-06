@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun Sayang</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .kontainer {
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+}
+    </style>
+</head>
+<body>
+    
+    <script src="script.js"></script>
+    <div class="container">
+        <h1>Selamat Ulang Tahun, Cantikkk! 🎉</h1>
+        <img src="foto2.jpeg" alt="Foto Pacar">
+        <p>Lov u! ❤️</p>
+      
+        <p>panjang umur yaaaa cantikk,sehat selalu.</p>
+        <a href="surprise.html"><button class="nav-button">pencet disini</button></a>
+    </div>
+    <script>
+        function createFlower() {
+            const flower = document.createElement("div");
+            flower.classList.add("flower");
+            flower.style.left = Math.random() * 100 + "vw";
+            flower.style.animationDuration = Math.random() * 3 + 2 + "s";
+            document.body.appendChild(flower);
+            setTimeout(() => { flower.remove(); }, 5000);
+        }
+        setInterval(createFlower, 300);
+    </script>
+
+    
+    
+  
+</body>
+</html>

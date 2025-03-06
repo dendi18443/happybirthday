@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kejutan Romantis</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    background-color: #ffe6e6;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #e60073;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.nav-button {
+    background-color: #e60073;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #cc005f;
+}
+
+.falling-hearts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: auto;
+    z-index: 9999;
+}
+
+.heart {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #e60073;
+    transform: rotate(45deg);
+    animation: fall linear infinite;
+}
+
+.heart::before,
+.heart::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #e60073;
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -15px;
+    left: 0;
+}
+
+.heart::after {
+    top: 0;
+    left: -15px;
+}
+.romantic-image {
+    width: 50%; /* Atur lebar gambar sesuai kebutuhan */
+    max-width: 200px; /* Lebar maksimum gambar */
+    height: auto; /* Mempertahankan rasio aspek gambar */
+    border: 5px solid #e60073; /* Border dengan warna merah muda */
+    border-radius: 15px; /* Sudut border yang membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan halus di sekitar gambar */
+    margin: 20px 0; /* Jarak vertikal di sekitar gambar */
+}
+
+.kontainer {
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(45deg);
+    }
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="container">
+            <h1>INTAN PRATIWI PUTRI</h1>
+            <img src="foto3.jpeg" alt="Deskripsi gambar romantis" class="romantic-image">
+            <p>pencet dulu ini yaaa</p>
+            <audio src="laguku.mp3" autoplay controls></audio>
+            <p>Sehat-sehat selalu,yaa.Jangan pernah telat makan,jaga diri kamu baik-baik.Jika ada hari yang merasa kamu 
+                berat,percayalah semua akan cepat berlalu.Langit tak selamanya mendung,dan badai pasti akan reda.Semoga
+                tak ada satu hal pun yang merengut senyummu,semoga bahagia selalu menemanimu.
+            </p>
+            <P>Dan yang paling penting,semoga setiap impian yang pernah kamu ceritakan pelan-pelan menemukan jalannya.
+                Semoga usaha kamu tak pernah sia-sia,semoga proses yang kamu jalani membawamu pada hasil yang pantas kamu dapatkan.
+                Tetap semangat,aku percaya kamu pasti bisa.
+            </P>
+            <p>Kalau kamu merasa lelah di tengah perjalanan ini,ingatlah untuk beristirahat tetapi jangan pernah menyerah,
+                jangan terlalu memaksakan diri,gapapa untuk istirahat sejenak.Ingatkan diri kamu sendiri tentang alasan kamu memulai.
+                Banggalan dengan apa yang kamu capai sejauh ini,teruslah maju dengan kecepatan kamu sendiri.
+            </p>
+            <p>Jaga kesehatan dan semangatmu yaaa,semoga setiap harimu diisi dengan kebahagiaan yang membuat kamu merasa bersyukur dan tersenyum.
+                teruslah berjalan dengan percaya diri,percayalah ada banyak hal baik yang menunggumu di depan dan aku selalu yakin kamu bisa
+                melewati setiap tantangan dengan kuat.
+            </p>
+        </div>
+        <div class="container">
+            <img src="foto1.jpeg" alt="Deskripsi gambar romantis" class="romantic-image">
+           
+        </div>
+        <div class="falling-hearts"></div>
+        <script src="script.js"></script>
+        
+        <a href="index.html"><button class="nav-button">balik lagi ehey</button></a>
+    </div>
+    <div class="falling-hearts"></div>
+    <script src="script.js"></script>
+
+    
+
+   
+</body>
+</html>
